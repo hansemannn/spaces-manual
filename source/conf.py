@@ -16,11 +16,13 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+def setup(app):
+    app.add_stylesheets('css/custom.css')
 
 # -- Project information -----------------------------------------------------
 
 project = 'Mittwald SPACES'
-copyright = '2018, SPACES team'
+copyright = '2018 Mittwald CM Service GmbH & Co. KG'
 author = 'SPACES team'
 
 # The short X.Y version
@@ -80,7 +82,9 @@ html_theme = 'default'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
